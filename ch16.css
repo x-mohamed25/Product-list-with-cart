@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    text-shadow: 1px 1px 2px black;
+    text-transform: capitalize;
+    background-color: hsl(13, 31%, 94%);
+    padding: 80px;
+    display: flex;
+    gap: 10px;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+
+}
+
+.left {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* لتوزيع الكروت على السطر */
+    gap: 10px;
+    flex: 4; 
+    animation: slide-in 3s ease-in-out 0s 1 normal forwards;
+
+}
+
+.right {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    max-width: 400px;
+    flex: 0 0 30%;
+    overflow-y: auto;
+    min-height: 400px;
+}
+
+.line {
+    width: 5px;
+    background-color: rgb(29, 21, 12);
+
+
+}
+
+
+.right div {
+
+    width: 50%;
+
+}
+
+.card {
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 25%;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.card:hover {
+    transform: scale(1.1);
+
+
+}
+
+.card img {
+
+    border-radius: 20px;
+}
+
+button {
+
+    width: 50%;
+    position: relative;
+    bottom: 20px;
+    left: 50px;
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.card button:active {
+    transform: scale(0.95);
+    background-color: #e6b800;
+}
+
+.card p {
+    color: hsl(14, 25%, 72%);
+}
+
+.card h4 {
+    color: rgb(239, 119, 75)
+}
+
+.f1 {
+    background-color: white;
+    height: auto;
+    width: 100%;
+}
+
+.f1 img {
+    width: 100%;
+}
+
+.f1 h1 {
+    color: rgb(239, 119, 75);
+}
+
+.f1 h1 {
+    color: hsl(14, 25%, 72%);
+}
+
+#ok {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+}
+
+
+button:active {
+    transform: scale(0.95);
+    background-color: #e6b800;
+}
+ 
+
+#ok:hover{  
+    transform: scale(1.1);
+background-color: #c9a101
+}
+
+@keyframes slide-in{
+from{
+    transform: translateY(-100%);
+    opacity: 0;
+}
+to{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+}
